@@ -72,7 +72,7 @@ background-size: cover;
 display: flex;
 margin-top: 1.5em;
   background-position: 100%;
-    background-image: url("/microsoft.webp");
+    background-image: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/desktop-acom-july-inspire-hero?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3200&hei=984&qlt=95&fmt=png-alpha&fit=constrain");
 }
 
 .main-head{
