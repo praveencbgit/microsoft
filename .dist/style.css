@@ -321,6 +321,7 @@ border-style: groove;
 
 .section6{
     display: flex;
+    gap: 4em;
     position: relative;
     margin-top: 3em;
 right: 6em;
@@ -328,7 +329,7 @@ right: 6em;
 
 
 .section6>div{display: grid;
-    gap: 5em;
+    gap: 8em;
     justify-content: center;
 grid-template-columns: 250px 250px 250px;}
 
@@ -514,7 +515,7 @@ justify-content: space-between;}
     border-radius: 20px 0px 0px 20px;
     flex-direction: column;
     border-style: groove;
-    width: 45em;
+    width:100%;
     gap: 1em;
     margin-left: 5em;
     list-style: none;
@@ -531,7 +532,16 @@ margin-right: 3em;}
     padding: 1em;
 }
 .car-span2{margin-left: 1em;
+    font-size: 14px;
 color: #0078D4;}
+
+.car-span3{
+
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 1em;
+    color: black;
+}
 
 .btn11{background-color: #0078D4;
     color: antiquewhite;
@@ -543,35 +553,204 @@ color: #0078D4;}
     
     border-radius: 10px;
     border-style: none;}
-    
-
-@media(max-width:480px)
-{
 
 
-
-    .content{width: 85em;}
-    .imgs{display: flex;
-        zoom:200%;
-    flex-direction: column;}
-    .section4{
+    .logos{background-color:whitesmoke;
+        padding: 3em;
+        box-shadow: 4px 20px 5px rgb(0,0,0.6,0.4);
+        margin-top: 2em;
+        width: 70%;
+        gap: 5em;
+        align-items: center;
+        justify-content: center;
+        margin-left: 14em;
+        border-radius: 20px;
         display: flex;
-    align-self: auto;
+    height: 3em;}
+
+    .logos>img{height: 60px;
+    width: 100px;}
+
+    .logos>img:hover{
+        cursor: pointer;
+        text-decoration:underline;
+    }
+
+    .logos:hover{text-decoration: underline;}
+
+    .last{background-image: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/NextStep-BG-Desktop-2x?resMode=sharp2&amp;op_usm=1.5,0.65,15,0&amp;wid=1600&amp;hei=608&amp;qlt=95&amp;fit=constrain");
+    justify-content: center;
+    display: flex;
+    gap: 4em;
+    padding-bottom: 2em;
+    margin-top: 3em;
+    background-size: cover;
+background-position: center;
+height: 30em;
+width: 100%;
+}
+
+.last-span{
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+top: 3em;
+left: 18em;}
+
+.last>div{display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 7em;
+width: 23em;
+height: 20em;
+padding: 1em;}
+
+.last-img{height: 70px;
+width: 70px;}
+
+
+.last-div{
+    background-color: #fff;
+    height: 20em;
+    gap: 2em;
+    border-radius: 20px;
+}
+
+.last-div1{font-size: 20px;
+font-weight: bold;}
+
+.last-div2{
+    font-size:17px ;
+
+}
+
+.footer{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding-top: 2em;
+    padding-left: 3em;
+    background-color: #f4f4f6;
+}
+
+.footer>div{
+
+    position: relative;
+    padding-left: 2em;
+    left:-34em;
+    display: flex;
+    margin-top: 6em;
+    flex-direction: column;
+    gap: 6em;
+}
+
+.txt1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.Azure{
+    color: rgb(0,0,0.6,0.4);
+    font-size: 20px;
+}
+#options{width: 12em;
+
+height: 3em;}
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>responsive */
+
+
+
+/* 
+
+    @media(min-width:1200px){
+
+        .content{width: 135%;}
+
+        .section4{width: 120%;}
+
+        .section7{
+            width: 130%;
+            margin-left: 2em;
+        }
+
+        .bg-blue{width: 120%;}
+
+        .car{width: 130%;}
+
+        .logos{width: 100%;
+        margin-top:1em;}
+
+        .last{
+            width: 130%;
+            margin-left: 1em;
+        }
+    } */
+    
+    @media(max-width:480px)
+    {
+.footer{display: none;}
+.section6{display: flex;
+flex-direction: column;}
+
+.logos{display: none;}
+
+.section7{display: none}
+.bg-blue{display: none;}
+
+.get{display: none;}
+
+        .right{display: none;}
+        
+        .imgs{
+            flex-direction: column;}
+            .section4{
+                display: flex;
         justify-content: center;
     }
+    body{width: 150%;}
+
 }
 
 @media(max-width:360px){
 
 
+    .footer{display: none;}
+
+#img{display: none;}
+    .section6{display: flex;
+    flex-direction: column;
+align-items: center;
+margin-left: 4em;
+}
+.section5{
+margin-left: 4em;}
+.section6>div{display: flex;
+    gap: 5em;
+flex-direction: column;}
+
+    .car-span{width: 10em;}
+.get{display: none;}
+.bg-blue{display: none;}
+    .car{display: flex;
+        gap: 3em;
+        width: fit-content;
+    flex-direction: column;
+align-items: center;}
+
+
+ 
+.right{display: none;}
+.section7{display: none;
+    
+    background-image: none;}
     .imgs{display: flex;
-        
-        margin-right: 15em;
-        zoom:250%;
+        left: 4em;
+                zoom:250%;
     flex-direction: column;}
-    .section4{
-        display: flex;
-margin-left: 16em;    }
+    
 
 .nav{zoom: 120%;}
 
@@ -583,32 +762,87 @@ margin-left: 16em;    }
     .container>div{
         zoom: 120%;}
 
-.sec7-img1{width: 80em;
+.sec7-img1{width: 60em;
 }
-
-body{zoom:110%}
 }
 
 
 @media(max-width:1200px){
 
-    .content{width: 180%;}
-    .section4{width: 150%;
+    .footer{width: 180%;}
+.right{position: relative;
+    left:30em;}
+    .last{width: 170%;
+        display: flex;
+        gap: 10em;
+   margin-left: 2em;}
+
+    .logos{width: 100%;}
+
+
+    body{width: 140%;}
+
+    .section6{margin-left: 12em;}
+    .content{width: 175%;
+    margin-left: 2em;}
+    .section4{width: 165%;
     }
+
     .imgs{
         margin-left: 4em;
     }
 
-    .section7{width: 120em;}
+    .section7{width: 175%;
+    margin-left: 2em;}
+
+.section5{width: 120em;}
+
+.car{width: 140%;
+margin-left: 14em;}
+
+.bg-blue{width: 150%;}
+
+.car>div{
+    width: 100%;
+}
+
+
+
+.right{position: relative;
+    
+    margin-left: 50em;}
 }
 
 @media(max-width:740px){
 
 
-    .content{width:90em}
-    .section4{
-        width: 75em;
+    .car{width:250%;}
+
+    .section7{
+
+        width: 278%;
     }
+
+.bg-blue{width: 190%;
+}
+
+.last{width: 270%;}
+
+    .nav{
+        display: flex;
+        margin-left: 20em;
+    gap: 3em;}
+
+    .content{width:280%}
+    .section4{
+        width: 255%;
+        margin-left: 2em;
+
+    }
+    .logos{width:200%;}
+
+   
+
 }
 
 
